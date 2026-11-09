@@ -1,0 +1,26 @@
+:root {
+    color-scheme: light dark;
+}
+
+h1 {
+    color: red;
+}
+
+body {
+    max-width: 32rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+blockquote {
+    background-color: color-mix(red 10%, transparent);
+
+    padding: 1rem;
+    margin-inline: 0;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+blockquote:hover {
+    background-color: color-mix(blue 10%, transparent);
+    transform: scale(1.25);
+}
