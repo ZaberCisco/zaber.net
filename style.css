@@ -1,26 +1,37 @@
 :root {
-    color-scheme: light dark;
-}
-
-h1 {
-    color: red;
+	color-scheme: light dark; /* this enables the built-in light/dark theme */
 }
 
 body {
-    max-width: 32rem;
-    margin-inline: auto;
-    text-align: center;
+	max-width: 48rem;
+	margin-inline: auto; /* this centers the page */
+
+	text-align: center; /* this centers the text */
+
+	font-family: sans-serif;
+	line-height: 1.5; /* adds a bit more spacing between text to make it look nicer */
 }
 
-blockquote {
-    background-color: color-mix(red 10%, transparent);
+main {
+	border: 1px solid currentColor; /* currentColor means text color, but you can replace that with any color! */
 
-    padding: 1rem;
-    margin-inline: 0;
-    transition: background-color 0.5s, transform 0.5s;
+	padding: 1rem;
+	margin-block: 1rem;
 }
 
-blockquote:hover {
-    background-color: color-mix(blue 10%, transparent);
-    transform: scale(1.25);
+footer {
+	background-color: rgba(255, 0, 0, 0.25);
+
+	font-weight: bold;
+
+	padding: 1rem;
+	transition:
+		background-color 0.25s,
+		transform 0.25s;
+}
+
+/* these styles will apply whenever you hover over the footer */
+footer:hover {
+	background-color: rgba(0, 0, 255, 0.25);
+	transform: scale(1.1);
 }
