@@ -1,6 +1,9 @@
-const squishSound = new Audio("./assets/adogyaru.mp3");
+const squishSounds = ["adogyaru.mp3", "adohehe.mp3"].map(
+  (file) => new Audio(`./assets/ado/${file}`),
+);
 
 document.getElementById("mini").addEventListener("click", (event) => {
+  const squishSound = squishSounds[Math.floor(Math.random() * squishSounds.length)];
   squishSound.currentTime = 0;
   squishSound.play();
   confetti({
