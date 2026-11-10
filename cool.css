@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/titillium-web@5.3.0/index.css');
 :root {
 	color-scheme: light dark; /* this enables the built-in light/dark theme */
 }
@@ -8,7 +9,7 @@ body {
 
 	text-align: center; /* this centers the text */
 
-	font-family: sans-serif;
+	font-family: "Titillium Web", sans-serif;
 	line-height: 1.5; /* adds a bit more spacing between text to make it look nicer */
 	background-color:light-dark(rgb(157, 182, 250), rgb(3, 3, 70));
 	color: light-dark(rgb(3,3,70), rgb(157,182,250));
@@ -37,4 +38,13 @@ footer {
 footer:hover {
 	background-color: rgba(0, 0, 255, 0.25);
 	transform: scale(1.1);
+}
+
+#amongus{
+	display:flex;
+	gap: 1rem;
+}
+
+#image1, #image2{
+	max-width: 64px;
 }
