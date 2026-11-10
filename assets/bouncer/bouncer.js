@@ -1,4 +1,4 @@
-const bouncers = ["devinflower.png", "pom.jpg"];
+const bouncers = ["devinflower.png", "pom.jpg", "g.png"];
 const bouncer = new Image();
 bouncer.className = "bouncer";
 bouncer.alt = "";
