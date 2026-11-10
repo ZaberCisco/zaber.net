@@ -21,8 +21,7 @@ body {
 main {
     position: relative;
     border: 2px solid currentColor; /* currentColor means text color, but you can replace that with any color! */
-    background-color: light-dark(rgba(205, 217, 250, 0.5), rgba(2, 2, 22, 0.5));
-	backdrop-filter: blur(8px);
+    background-color: light-dark(rgba(205, 217, 250), rgba(2, 2, 22));
     border-radius: 32px;
     padding: 1rem;
     margin-block: 1rem;
