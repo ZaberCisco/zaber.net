@@ -10,11 +10,14 @@ body {
 
 	font-family: sans-serif;
 	line-height: 1.5; /* adds a bit more spacing between text to make it look nicer */
+	background-color:light-dark(rgb(157, 182, 250), rgb(3, 3, 70));
+	color: light-dark(rgb(3,3,70), rgb(157,182,250));
 }
 
 main {
-	border: 1px solid currentColor; /* currentColor means text color, but you can replace that with any color! */
-
+	border: 2px solid currentColor; /* currentColor means text color, but you can replace that with any color! */
+	background-color:light-dark(rgb(205, 217, 250), rgb(2, 2, 22));
+	border-radius: 32px;
 	padding: 1rem;
 	margin-block: 1rem;
 }
