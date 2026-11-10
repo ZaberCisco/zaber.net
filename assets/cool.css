@@ -1,4 +1,5 @@
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/titillium-web@5.3.0/index.css');
+
 :root {
 	color-scheme: light dark; /* this enables the built-in light/dark theme */
 }
@@ -6,6 +7,7 @@
 body {
 	max-width: 48rem;
 	margin-inline: auto; /* this centers the page */
+	padding-inline: 1rem;
 
 	text-align: center; /* this centers the text */
 
@@ -16,6 +18,7 @@ body {
 }
 
 main {
+	position: relative;
 	border: 2px solid currentColor; /* currentColor means text color, but you can replace that with any color! */
 	background-color:light-dark(rgb(205, 217, 250), rgb(2, 2, 22));
 	border-radius: 32px;
@@ -29,16 +32,28 @@ footer {
 	font-weight: bold;
 
 	padding: 1rem;
-	transition:
-		background-color 0.25s,
-		transform 0.25s;
+	transition: background-color 0.25s, transform 0.25s;
 	border-radius: 32px;
+
+	&:hover {
+		background-color: rgba(0, 0, 255, 0.25);
+		transform: scale(1.1);
+	}
 }
 
-/* these styles will apply whenever you hover over the footer */
-footer:hover {
-	background-color: rgba(0, 0, 255, 0.25);
-	transform: scale(1.1);
+#mini {
+	position: absolute;
+	top: 0;
+	right: 0;
+	translate: 25% -25%;
+	width: 64px;
+	rotate: 10deg;
+	transition: scale 0.25s, rotate 0.25s;
+
+	&:hover {
+		scale: 1.25;
+		rotate: 20deg;
+	}
 }
 
 #adoburg, #adosleep {
