@@ -32,6 +32,7 @@ footer {
 	transition:
 		background-color 0.25s,
 		transform 0.25s;
+	border-radius: 32px;
 }
 
 /* these styles will apply whenever you hover over the footer */
@@ -50,9 +51,9 @@ footer:hover {
 }
 
 #adoburg {
-	left: 1rem;
+	left: 2rem;
 }
 
 #adosleep {
-	right: 1rem;
+	right: 2rem;
 }
