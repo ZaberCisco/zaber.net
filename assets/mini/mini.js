@@ -1,5 +1,5 @@
 const squishSounds = ["adogyaru.mp3", "adohehe.mp3"].map(
-  (file) => new Audio(`./assets/ado/${file}`),
+  (file) => new Audio(`./assets/mini/${file}`),
 );
 
 document.getElementById("mini").addEventListener("click", (event) => {

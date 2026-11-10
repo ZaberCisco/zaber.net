@@ -14,7 +14,7 @@ body {
     font-family: "Titillium Web", sans-serif;
     line-height: 1.5; /* adds a bit more spacing between text to make it look nicer */
     background-color: light-dark(rgb(157, 182, 250), rgb(3, 3, 70));
-    background-image: url("./tiles/stars.png");
+    background-image: url("./tile_stars2.png");
     color: light-dark(rgb(3, 3, 70), rgb(157, 182, 250));
 }
 
