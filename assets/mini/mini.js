@@ -7,8 +7,8 @@ document.getElementById("mini").addEventListener("click", (event) => {
   squishSound.currentTime = 0;
   squishSound.play();
   confetti({
-    particleCount: 250,
-    spread: 150,
+    particleCount: 100,
+    spread: 360,
     origin: { x: event.clientX / innerWidth, y: event.clientY / innerHeight },
   });
   const target = event.currentTarget;
